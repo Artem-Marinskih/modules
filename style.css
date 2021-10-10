@@ -13,10 +13,14 @@ button {
     border-radius: 20px;
     border: none;
     background-color: #42a5f5;
+    cursor: pointer;
 }
 input {
     margin-bottom: 20px;
     width: 240px;
+}
+.pointer{
+    cursor: pointer;
 }
 .app {
     display: flex;

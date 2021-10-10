@@ -31,9 +31,6 @@ function getMonth(dateResult) {
 
 const pencil = document.querySelector(".fa-pencil");
 pencil.addEventListener("click", () => {
-  
-  
-
   const myModal = new modal({
     target: document.querySelector(".fa-pencil"),
     props: {

@@ -1,0 +1,29 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx http-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Artem-Marinskih/modules.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Artem-Marinskih/modules/issues"
+  },
+  "homepage": "https://github.com/Artem-Marinskih/modules#readme",
+  "dependencies": {
+    "@jwrunge/modal": "1.0.8",
+    "flatpickr": "4.6.9",
+    "font-awesome": "4.7.0",
+    "vanilla-toast": "0.5.0"
+  },
+  "devDependencies": {
+    "vanillajs-datepicker": "1.1.4"
+  }
+}

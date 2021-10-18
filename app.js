@@ -2,7 +2,7 @@ const app = document.querySelector(".app");
 
 pre = document.createElement("pre");
 pre.classList.add("no-date", "fa");
-pre.textContent = "Дата и время не выбраны ";
+pre.textContent = `Дата и время не выбраны `;
 app.append(pre);
 
 const noDate = document.querySelector(".no-date");
@@ -36,7 +36,7 @@ pencil.addEventListener("click", () => {
     props: {
       closable: true,
       closepos: "modal-closer-right",
-      bgclose: true,
+      bgclose: false,
       content: `<input class='date' value = ${noDate.textContent}>`,
       heading: "Выберете дату и время",
       buttons: [
@@ -45,7 +45,6 @@ pencil.addEventListener("click", () => {
       ],
     },
   });
-  
 
   myModal.$on("close", function () {
     myModal.$set({ visible: false });
@@ -53,12 +52,14 @@ pencil.addEventListener("click", () => {
   myModal.$on("ok", function () {
     let date = datePicker.selectedDates[0];
     let modal = document.querySelector(".modal-inner");
-        modal.classList.remove("wibro");
 
     if (date === undefined) {
       modal.classList.add("wibro");
       vanillaToast.show("Ошибка", { className: "error" });
 
+    setTimeout( ()=>{
+        modal.classList.remove("wibro");
+    }, 1000)
       return;
     }
 

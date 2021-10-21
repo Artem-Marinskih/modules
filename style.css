@@ -33,7 +33,7 @@ input {
     font-size: 20px;
     margin-top: 10px;
 }
-.wibro{
+.vibro{
     display: block;
     position: relative;
     -webkit-animation: 0.1s tremor ease-out 2;  
